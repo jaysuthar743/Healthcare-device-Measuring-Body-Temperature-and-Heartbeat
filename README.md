@@ -49,7 +49,7 @@ transistor on the other side of the finger. The photo transistor collects the in
 passing through our finger. We choose a very high resistance R1,because most of the light through the
 finger is absorbed, It is desirable phototransistor sensitive enough.
 
-![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/2#issue-524256463)
+![Heartbeat sensor (Part no-KY-039)](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/2#issue-524256463)
 
 ### Bluetooth module (Part no-HC-05):
 
@@ -58,5 +58,49 @@ transparent wireless serial connection setup.It's Communications via serial comm
 an easy way to interface with controller or PC. HC-05 Bluetooth module provides switching mode
 between master and slave mode which means it able to use neither receiving nor transmitting data.
 
-![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/3#issue-524257010)
+![Bluetooth module (Part no-HC-05)](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/3#issue-524257010)
 
+### MIT app inventor:
+Application Inventor for Android is an open-source web application initially given by Google and now
+kept up by the Massachusetts Institute of Technology. It enables newcomers to PC programming to make
+programming applications for the Android working framework.
+
+### 3 Module specification
+The process of health device is mainly divided into following steps:
+1. Getting option from app.
+2. Getting value from appropriate sensor.
+3. Display output on app.
+
+* Getting option from app:
+
+A user will select the options button which are displayed on the app. Options are temperature logo and heartbeat
+logo. The app is developed using MIT App Inventor. The app will communicate with the help of Bluetooth.
+
+* Getting value from appropriate sensor:
+
+Device user select temperature or heartbeat from the android app and command is sent to Arduino board using the
+Bluetooth. Board will take value from the sensor, do some operation on it to get an output based on the command.
+Temperature is measure in celsius and heartbeat is measure in BPM The output will send to an app using the
+Bluetooth.
+Temperature sensor is connected to arduino in following manner:
+```VDD -> 3.3V
+GND->GND
+S->Digital 5
+``` 
+
+Heartbeat sensor is connected to arduino in following manner:
+```VDD->5.0v
+GND->GND
+S->Analog(A0)
+```
+Bluetooth module is connected to arduino in following manner:
+```VDD->5.0v
+GND->GND
+RX->TX
+TX->RX
+```
+* Display output on app:
+
+Android app which is developed in MIT app inventor is using to display the value of body temperature and
+heartbeat of your body. App will notify the user that his/her body temperature and heartbeat is low, normal or high
+using color notifier.
