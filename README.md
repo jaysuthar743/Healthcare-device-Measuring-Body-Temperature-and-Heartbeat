@@ -47,7 +47,7 @@ transistor on the other side of the finger. The photo transistor collects the in
 passing through our finger. We choose a very high resistance R1,because most of the light through the
 finger is absorbed, It is desirable phototransistor sensitive enough[3]
 
-![alt text](https://robu.in/product/finger-detecting-heartbeat-module/?gclid=Cj0KCQiAn8nuBRCzARIsAJcdIfN_cWXueOy4HLJ33RBN_WtibcfMioCe8N_WR2Bh-jCzCl651oyYWkMaAkxGEALw_wcB)
+![alt text](https://user-images.githubusercontent.com/40814722/69042396-21740a80-0a17-11ea-8c24-12c5d7c8b7b2.png)
 
 ### Bluetooth module (Part no-HC-05):
 
