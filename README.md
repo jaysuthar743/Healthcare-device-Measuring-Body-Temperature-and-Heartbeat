@@ -37,6 +37,7 @@ directly from the data line. It has the following features:
 * It converts 12-bit temperature to digital word in 750 ms (max.).
 * Applications include thermostatic controls,industrial systems, consumer products,thermometers,
 or any thermally sensitive system.
+
 ![alt text](https://user-images.githubusercontent.com/40814722/69042396-21740a80-0a17-11ea-8c24-12c5d7c8b7b2.png)
 
 ### Heartbeat sensor (Part no-KY-039) :
@@ -46,12 +47,16 @@ reduced IR transmission or increased IR reflection during the a beat or pulse. I
 GND and signal. The sensor works as follows: the LED is the light side of the finger and the photo
 transistor on the other side of the finger. The photo transistor collects the intensity of the light after
 passing through our finger. We choose a very high resistance R1,because most of the light through the
-finger is absorbed, It is desirable phototransistor sensitive enough[3]
+finger is absorbed, It is desirable phototransistor sensitive enough.
 
+![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/2#issue-524256463)
 
 ### Bluetooth module (Part no-HC-05):
 
 HC-05 Bluetooth Module is an easy to use Bluetooth SPP (Serial Port Protocol) module, designed for
 transparent wireless serial connection setup.It's Communications via serial communication which makes
 an easy way to interface with controller or PC. HC-05 Bluetooth module provides switching mode
-between master and slave mode which means it able to use neither receiving nor transmitting data [4].
+between master and slave mode which means it able to use neither receiving nor transmitting data.
+
+![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/3#issue-524257010)
+
