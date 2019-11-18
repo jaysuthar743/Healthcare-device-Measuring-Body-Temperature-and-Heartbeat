@@ -1,4 +1,4 @@
-# Healthcare device-Measuring Body Temperature and Heartbeat
+# Healthcare device:Measuring Body Temperature and Heartbeat
 
 People have always tried to develop devices which are useful to mankind. The reason is obvious since the past,
 man has been very successful in using the devices developed to reduce the amount of physical labor needed to do many
