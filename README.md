@@ -37,6 +37,7 @@ directly from the data line. It has the following features:
 * It converts 12-bit temperature to digital word in 750 ms (max.).
 * Applications include thermostatic controls,industrial systems, consumer products,thermometers,
 or any thermally sensitive system.
+![alt text](https://user-images.githubusercontent.com/40814722/69042396-21740a80-0a17-11ea-8c24-12c5d7c8b7b2.png)
 
 ### Heartbeat sensor (Part no-KY-039) :
 
@@ -47,7 +48,6 @@ transistor on the other side of the finger. The photo transistor collects the in
 passing through our finger. We choose a very high resistance R1,because most of the light through the
 finger is absorbed, It is desirable phototransistor sensitive enough[3]
 
-![alt text](https://user-images.githubusercontent.com/40814722/69042396-21740a80-0a17-11ea-8c24-12c5d7c8b7b2.png)
 
 ### Bluetooth module (Part no-HC-05):
 
