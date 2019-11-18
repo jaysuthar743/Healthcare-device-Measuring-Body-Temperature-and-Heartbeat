@@ -105,3 +105,119 @@ using color notifier.
 
 ![](https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd2.png)
 
+### Code
+```
+
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#define samp_siz 4
+#define rise_threshold 4
+int temp_sensor = 5;       // Pin DS18B20 Sensor is connected (temperature sensor pin)
+int hb_sensorPin=0; // Pin KY-039 sensor is connected (heartbeat sensor pin)
+int ans =0;
+String voice="";
+OneWire oneWirePin(temp_sensor);
+DallasTemperature sensors(&oneWirePin);
+void setup(void)
+{
+  Serial.begin(9600);
+  sensors.begin();
+}
+
+void loop()
+{
+  float temperature = 0,heartbeat=0;      //Variable to store the temperature and heartbeat
+  int m=0;
+  // variable used in heartbeat
+  float reads[samp_siz],sum,last,reader,start,first,second,third,before,print_val;
+  long int now,ptr,last_beat;
+  bool rising;
+  int rise_count,n;
+   while(Serial.available())
+  {
+    char c = Serial.read();
+    voice+=c; 
+    Serial.println(voice); 
+  }
+  long st=millis();
+  long et = st;
+  if (voice == "Temp")
+  {
+ while((et-st)<30000)
+  {
+    sensors.requestTemperatures(); 
+    temperature  += sensors.getTempCByIndex(0);
+    m++;
+    et=millis();
+  }
+  ans = temperature/m;
+  Serial.println(ans);  
+  voice="";
+  }
+ 
+  if (voice=="Heart")
+  {
+      for (int i = 0; i < samp_siz; i++){
+        reads[i] = 0;
+    }
+    sum = 0;
+    ptr = 0;
+
+    while((et-st)<30000)
+    {
+      // calculate an average of the sensor
+      // during a 20 ms period (this will eliminate
+      // the 50 Hz noise caused by electric light
+      n = 0;
+      start = millis();
+      reader = 0.;
+      do
+      {
+        reader += analogRead (hb_sensorPin);
+        n++;
+        now = millis();
+      }
+      while (now < start + 20);  
+      reader /= n;  // we got an average
+      
+      // Add the newest measurement to an array
+      // and subtract the oldest measurement from the array
+      // to maintain a sum of last measurements
+      sum -= reads[ptr];
+      sum += reader;
+      reads[ptr] = reader;
+      last = sum / samp_siz;
+      if (last > before)
+      {
+        rise_count++;
+        if (!rising && rise_count > rise_threshold)
+        {
+          rising = true;
+          first = millis() - last_beat;
+          last_beat = millis();
+          heartbeat += 60000. / (0.4 * first + 0.3 * second + 0.3 * third);
+          m++;
+          third = second;
+          second = first;
+          
+        }
+      }
+      else
+      {
+        // Ok, the curve is falling
+        rising = false;
+        rise_count = 0;
+      }
+      before = last;
+      
+      
+      ptr++;
+      ptr %= samp_siz;
+      et=millis();
+    }
+  ans = heartbeat/m;
+  Serial.println(ans);  
+  voice=""; 
+  }
+}
+```
