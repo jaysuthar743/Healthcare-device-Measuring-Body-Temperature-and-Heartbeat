@@ -221,4 +221,4 @@ void loop()
 
 ### Circuit diagram
 
-<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd.png" width="500" height="500">
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd.png" width="1400" height="500">
