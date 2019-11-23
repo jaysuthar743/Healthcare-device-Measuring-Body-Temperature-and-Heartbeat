@@ -38,6 +38,8 @@ directly from the data line. It has the following features:
 * Applications include thermostatic controls,industrial systems, consumer products,thermometers,
 or any thermally sensitive system.
 
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/t.png" alt="alt text" width="250" height="250">
+
 
 ### Heartbeat sensor (Part no-KY-039) :
 
@@ -48,7 +50,6 @@ transistor on the other side of the finger. The photo transistor collects the in
 passing through our finger. We choose a very high resistance R1,because most of the light through the
 finger is absorbed, It is desirable phototransistor sensitive enough.
 
-![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/2#issue-524256463)
 
 
 ### Bluetooth module (Part no-HC-05):
