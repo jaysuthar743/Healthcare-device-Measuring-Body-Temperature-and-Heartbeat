@@ -50,6 +50,7 @@ transistor on the other side of the finger. The photo transistor collects the in
 passing through our finger. We choose a very high resistance R1,because most of the light through the
 finger is absorbed, It is desirable phototransistor sensitive enough.
 
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/hb.png" width="250" height="250">
 
 
 ### Bluetooth module (Part no-HC-05):
@@ -59,8 +60,7 @@ transparent wireless serial connection setup.It's Communications via serial comm
 an easy way to interface with controller or PC. HC-05 Bluetooth module provides switching mode
 between master and slave mode which means it able to use neither receiving nor transmitting data.
 
-![alt text](https://github.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/issues/3#issue-524257010)
-
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/b.png" width="300" height="350">
 
 ### Module specification
 The process of health device is mainly divided into following steps:
@@ -101,10 +101,6 @@ TX->RX
 Android app which is developed in MIT app inventor is using to display the value of body temperature and
 heartbeat of your body.App will notify the user that his/her body temperature and heartbeat is low, normal or high
 using color notifier.
-
-### Circuit diagram
-
-![](https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd2.png)
 
 ### Code
 ```
@@ -222,3 +218,7 @@ void loop()
   }
 }
 ```
+
+### Circuit diagram
+
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd.png" width="500" height="500">
