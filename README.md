@@ -1,5 +1,7 @@
 # Healthcare device:Measuring Body Temperature and Heartbeat
 
+![Alt text]( "Optional Title")
+
 People have always tried to develop devices which are useful to mankind. The reason is obvious since the past,
 man has been very successful in using the devices developed to reduce the amount of physical labor needed to do many
 tasks. With the introduction of the computer, it became a possibility that devices could also reduce the amount of mental
@@ -222,3 +224,14 @@ void loop()
 ### Circuit diagram
 
 <img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/cd.png" width="1400" height="500">
+
+### Screen Layouts
+
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/s1.png" width="300" height="400">
+
+
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/s2.png" width="300" height="400">
+
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/s3.png" width="300" height="400">
+
+<img src="https://raw.githubusercontent.com/jaysuthar743/Healthcare-device-Measuring-Body-Temperature-and-Heartbeat/master/s4.png" width="300" height="400">
